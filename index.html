@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike copy web</title>
+    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        width: 100%;
+        height: 36px;
+        background-color: rgb(246, 245, 245);
+    }
+    .logolar{
+        margin-left: 2rem;
+    }
+    .container>.logolar>.jor{
+        width: 30px;
+        height: 25px;
+        margin-top: 5px;
+        margin-left: 1rem;
+    }
+    .textup{
+        width: 300px;
+        height: 21px;
+        margin-top: -26px;
+        margin-left: 75.5rem;
+        background-color: rgb(246, 245, 245);
+    
+    }
+    .textup>.texts{
+        margin-left: .5rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow',sans-serif;
+        font-size: 12.5px;
+        background-color: rgb(246, 245, 245);
+        border: 0px;
+        border-color: rgb(246, 245, 245);
+    }
+    .texts:hover{
+        cursor: pointer;
+        color: rgb(85, 84, 84);
+    }
+    .container1 {
+        width: 100%;
+        height: 60px;
+        background-color:   white;
+    }
+    .pitichkabox>img{
+        width: 60px;
+        margin-top: 9px;
+        margin-left: 3rem;
+    }
+    .menu{
+        width: 450px;
+        height: 20px;
+        background-color: white;
+        font-size: 17px;
+        margin-top: -2rem;
+        margin-left: 35rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow',sans-serif;
+    }
+    .menu>a{
+        text-decoration: none;
+        margin-left: 1rem;
+        color: black;
+    }
+    .menu>a:hover{
+        margin-top: 10px;
+        text-decoration: underline;
+    }
+    .search{
+        width: 174px;
+        height: 40px;
+        background-color: white;
+        margin-top: -2rem;
+        margin-left: 75rem;
+        border: 1px solid white;
+        border-radius: 40px;
+    }
+    .search>input{
+        width: 174px;
+        height: 40px;
+        border: 0px solid white;
+        border-radius: 40px;
+        background-color: rgb(246, 244, 244);
+        text-align: center;
+        font-size: medium;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow',sans-serif;
+    }
+    .search>button{
+        width: 40px;
+        height: 35px;
+        position: absolute;
+        top: 47px;
+        margin-left: .3rem;
+        border-radius: 20px;
+        background-image: url(search.png);
+        background-position: center;
+        background-size: cover;
+        border: none;
+    }
+    .search>input:hover{
+        background-color: rgb(213, 212, 212);
+    }
+    .search>button:hover{
+        background-color: rgb(213, 212, 212);
+    }
+    .shopandheart{
+        width: 100px;
+        height: 30px;
+        background-color: white;
+        margin-left: 87rem;
+        margin-top: -2rem;
+    }
+    .shopandheart>img{
+        width: 30px;
+        height: 22px;
+        margin-left: 1rem;
+        border: 1px solid white;
+        border-radius: 30px;
+        border-color: white;
+    }
+    .shopandheart>img:hover{
+        border-color: rgb(224, 224, 224);
+    }
+    .container2{
+        width: 100%;
+        height: 60px;
+        background-color: rgb(241, 239, 239);
+    }
+    .container2>.leftbutton{
+        width: 30px;
+        height: 60px;
+        margin-top: 0rem;
+        margin-left: 25.7rem;
+        background-color: rgb(241, 239, 239);
+    }
+    .leftbutton>button{
+        margin-top: 1.2rem;
+        width: 25px;
+        height: 25px;
+        border: none;
+        background-image: url(left.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .leftbutton>button:hover{
+        cursor: pointer;
+    }
+    .rigthbutton{
+        width: 30px;
+        height: 59px;
+        margin-top: -2.8rem;
+        margin-left: 67rem;
+        background-color: rgb(241, 239, 239);
+    }
+    .rigthbutton>button{
+        margin-top: 1.2rem;
+        width: 25px;
+        height: 25px;
+        border: none;
+        background-image: url(right.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .rigthbutton>button:hover{
+        cursor: pointer;
+    }
+    .shoptext{
+        width: 300px;
+        height: 25px;
+        background-color: rgb(241, 239, 239);
+        
+        margin-left: 40rem;
+        margin-top: -2.5rem;
+    }
+    .shoptext>span{
+        font-family: 'Helvetica Now Display Medium',Helvetica,Arial,sans-serif;
+        color: rgb(51, 51, 51);
+        font-size: medium;
+        
+    }
+    .shoptext>a{
+        font-family: 'Helvetica Now Display Medium',Helvetica,Arial,sans-serif;
+        color: rgb(51, 51, 51);
+        margin-left: 1rem;
+        font-size: medium;
+    }
+    h1{
+        font-family: 'Helvetica Now Display Medium',Helvetica,Arial,sans-serif;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: -2.5px;
+        color: rgb(51, 51, 51);
+        margin: 1.5rem;
+    }
+    .container3{
+        width: 100%;
+        height: 800px;
+    }
+    .container3>h3{
+        margin-top: 3.5rem;
+        margin-left: 3rem;
+        font-family: 'Helvetica Now Display Medium',Helvetica,Arial,sans-serif;
+        font-size: 22px;
+        color: rgb(51, 51, 51);
+    }
+    .icons{
+        padding-top: 0.6rem;
+        margin-top: 0rem;
+        width: 100%;
+        height: 70px;
+        background-color: white;
+    }
+    .icons>.iconleft{
+        width: 60px;
+        height: 50px;
+        margin-left: 85rem;
+        background-color: white;
+    }
+    .icons>.iconleft>button{
+        width: 45px;
+        height: 45px;
+        margin-top: 4px;
+        margin-left: 9px;
+        background-image: url(left.png);
+        background-position: center;
+        background-size: 35px;
+        border: none;
+        border-radius: 30px;
+    }
+    .icons>.iconrigth{
+        width: 60px;
+        height: 50px;
+        margin-top: -3.1rem;
+        margin-left: 89rem;
+        background-color: white;
+    }
+    .icons>.iconrigth>button{
+        width: 45px;
+        height: 45px;
+        margin-top: 4px;
+        margin-left: 9px;
+        background-image: url(right.png);
+        background-position: center;
+        background-size: 35px;
+        border: none;
+        border-radius: 30px;
+    }
+    .icons>.iconleft>button:hover{
+        cursor: pointer;
+    }
+    .icons>.iconrigth>button:hover{
+        cursor: pointer;
+    }
+    .market{
+        display: flex;
+        width: 100%;
+        height: 700px;
+        background-color: white;
+    }
+    .card1{
+        margin-left: 2rem;
+        width: 468px;
+        height: 600px;
+        background-color: white;
+    }
+    .card1>img{
+        margin-left: 1px;
+        height: 466px;
+        height: 466px;
+        border: 1px solid white;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+    .card1>h1{
+        font-size: 20px;
+        letter-spacing: normal;
+        margin-left: -18rem;
+        margin-top: .5rem;
+        color: black;
+    }
+    .card1>h2{
+        font-size: 16px;
+        font-family:  sans-serif;
+        color: rgb(51, 51, 51);
+        margin-top: -1.2rem;
+        margin-left: .1rem;
+        margin-bottom: 1rem;
+    }
+    .card1>h3:first-child{
+        font-size: 16px;
+        font-family:  sans-serif;
+        margin-top: 1rem;
+        margin-left: .1rem;
+    }
+    .card1>h3:last-child{
+        font-size: 16px;
+        font-family:  sans-serif;
+        color: rgb(51, 51, 51);
+        margin-top: .5rem;
+        margin-left: .1rem;
+        text-decoration: line-through;
+    }   
+    .card1>img:hover{
+        cursor: pointer;
+    }
+    .footer{
+        display: flex;
+        padding-top: 2rem;
+        width: 100%;
+        height: 420px;
+        background-color: rgb(21, 21, 21);
+    }
+    .box1{
+        width: 200px;
+        height: 300px;
+        margin-left: 5rem;
+    }
+    .footer-link{
+        text-decoration: none;
+        color: white;
+        list-style-type: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow',sans-serif;
+        margin-top: 1.3rem;
+        font-size: 14px;
+        letter-spacing: -.5px;
+    }
+    .box2{
+        margin-left: 4rem;
+        width: 200px;
+        height: 300px;
+    }
+    .footer-link11{
+        text-decoration: none;
+        list-style-type: none;
+        font-size: 13px;
+        letter-spacing: -.5px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 1.3rem;
+        color: white;
+    }
+    .footer-link1{
+        text-decoration: none;
+        list-style-type: none;
+        font-size: 14px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 1rem;
+        color: rgb(85, 84, 84);
+    }
+    .box3{
+        width: 200px;
+        height: 350px;
+        margin-left: 4rem;
+    }
+    .footer-link22{
+        text-decoration: none;
+        list-style-type: none;
+        font-size: 14px;
+        letter-spacing: -.5px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 1.3rem;
+        color: white;
+    }
+    .footer-link2{
+        text-decoration: none;
+        list-style-type: none;
+        font-size: 13px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: .9rem;
+        color: rgb(85, 84, 84);
+    }
+    .box4{
+        width: 200px;
+        height: 300px;
+        margin-left: 4rem;
+    }
+    .footer-link33{
+        text-decoration: none;
+        list-style-type: none;
+        font-size: 14px;
+        letter-spacing: -.5px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 1.3rem;
+        color: white;
+    }
+    .footer-link3{
+        text-decoration: none;
+        list-style-type: none;
+        font-size: 13px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 1rem;
+        color: rgb(85, 84, 84);
+    }
+    .box5{
+        display: flex;
+        width: 300px;
+        height: 50px;
+        text-decoration: none;
+        list-style-type: none;
+        flex-direction: row;
+        margin-left: 8rem;
+        
+    }
+    .box5>li{
+        margin-left: 2rem;
+        font-size: 30px; 
+    } 
+    .box6{
+        display: flex;
+        margin-top: 22rem;
+        margin-left: -87rem;
+        width: 500px;
+        height: 20px;
+    }
+    .box6>h3{
+        font-size: 13px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+    }
+    .box6>h5{
+        margin-top: .3rem;
+        color: white;
+        margin-left: 1rem;
+        font-size: 9px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .box7{
+        margin-top: 19rem;
+        text-decoration: none;
+        list-style-type: none;
+        margin-left: 1rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        display: flex;
+        width: 800px;
+        height: 20px;
+    }
+    
+    .footer-link4{
+        text-decoration: none;
+        color:  rgb(85, 84, 84);
+        font-size: 13px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 1rem;
+    }
+    .box8{
+        margin-top: 22rem;
+        margin-left: -20rem;
+        display: flex;
+        width: 400px;
+        height: 30px;
+    }
+    .footer-link5{
+        text-decoration: none;
+        list-style-type: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(85, 84, 84);
+        margin-left: 1rem;
+        font-size: 14px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="logolar">  
+            <img class="jor" src="jordan.jpg" alt="">
+            <img class="jor" src="logo1.jpg" alt="">
+        </div>
+        <div class="textup">
+            <button class="texts">Find a Store</button>
+            <span class="texts">|</span>
+            <button class="texts">Help</button>
+            <span class="texts">|</span>
+            <button class="texts">Join Us</button>
+            <span class="texts">|</span>
+            <button class="texts">Sing In</button>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="pitichkabox">
+            <img src="piticha.jpg" alt="">
+        </div>
+        <div class="menu">
+            <a href="https://www.nike.com/gb/w/new-3n82y">New & Featured</a>
+            <a href="https://www.nike.com/gb/men">Men</a>
+            <a href="https://www.nike.com/gb/women">Women</a>
+            <a href="https://www.nike.com/gb/kids">Kids</a>
+            <a href="https://www.nike.com/gb/w/sale-3yaep">Sale</a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button></button>
+        </div>
+        <div class="shopandheart">
+            <img src="heart.png" alt="">
+            <img src="shop.jpg" alt="">
+        </div>
+    </div>
+    <div class="container2">
+        <div class="leftbutton"><button></button></div>
+        <div class="shoptext"><span>SHOP ALL NEW ARRIVALS</span><a class="footer-link" href="">Shop</a></div>
+        <div class="rigthbutton"><button></button></div>
+    </div>
+    <h1>THE PRODUCT YOU ARE LOOKING FOR IS NO LONGER AVAILABLE</h1>
+    <div class="container3">
+        <h3>You Might Also Like</h3>
+        <div class="icons">
+            <div class="iconleft"><button></button></div>
+            <div class="iconrigth"><button></button></div>
+        </div>
+        <div class="market">
+            <div class="card1">
+                <img src="blecknike.webp" alt="">
+                <h1>Nike Force 1 LE</h1>
+                <h2>Younger Kids' Shoe</h2>
+                <h3>£37.49</h3>
+                <h3 class="underlineh3">£52.95</h3>
+            </div>
+            <div class="card1">
+                <img src="whitenike.webp" alt="">
+                <h1>Nike Force 1 LE</h1>
+                <h2>Younger Kids' Shoe</h2>
+                <h3>£37.49</h3>
+                <h3 class="underlineh3">£52.95</h3>
+            </div>
+            <div class="card1">
+                <img src="graynike.webp" alt="">
+                <h1>Nike Force 1 LE</h1>
+                <h2>Younger Kids' Shoe</h2>
+                <h3>£37.49</h3>
+                <h3 class="underlineh3">£52.95</h3>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="box1">
+            <ul>
+                <li class="footer-link"><a class="footer-link"href="">GIFT CARDS</a></li>
+                <li class="footer-link"><a class="footer-link" href="">FIND A STORE</a></li>
+                <li class="footer-link"><a class="footer-link" href="">NIKE JOURNAL</a></li>
+                <li class="footer-link"><a class="footer-link" href="">BECOME A MEMBER</a></li>
+                <li class="footer-link"><a class="footer-link" href="">STUDENT DISCOUNT</a></li>
+                <li class="footer-link"><a class="footer-link" href="">FEEDBACK</a></li>
+                <li class="footer-link"><a class="footer-link" href="">PROMO CODES</a></li>
+            </ul>
+        </div>
+        <div class="box2">
+            <ul>
+                <li class="footer-link11"><a class="footer-link11" href="">GET HELP</a></li>
+                <li class="footer-link1"><a class="footer-link1" href="">Order Status</a></li>
+                <li class="footer-link1"><a class="footer-link1" href="">Shipping and Delivery</a></li>
+                <li class="footer-link1"><a class="footer-link1" href="">Returns</a></li>
+                <li class="footer-link1"><a class="footer-link1" href="">Payment Options</a></li>
+                <li class="footer-link1"><a class="footer-link1" href="">Contact Us</a></li>
+                <li class="footer-link1"><a class="footer-link1" href="">Nike Promo Codes Help</a></li>
+            </ul>
+        </div>
+        <div class="box3">
+            <ul>
+                <li class="footer-link22"><a class="footer-link22" href="">ABOUT NIKE</a></li>
+                <li class="footer-link2"><a class="footer-link2" href="">News</a></li>
+                <li class="footer-link2"><a class="footer-link2" href="">Careers</a></li>
+                <li class="footer-link2"><a class="footer-link2" href="">Investors</a></li>
+                <li class="footer-link2"><a class="footer-link2" href="">Sustainability</a></li>
+                <li class="footer-link2"><a class="footer-link2" href="">Purpose</a></li>
+                <li class="footer-link2"><a class="footer-link2" href="">UK Tax</a></li>
+                <li class="footer-link2"><a class="footer-link2" href="">UK Pension Statement</a></li>
+                <li class="footer-link2"><a class="footer-link2" href="">UK Pension SIP</a></li>
+            </ul>
+        </div>
+        <div class="box4">
+            <ul>
+                <li class="footer-link33"><a class="footer-link33" href="">JOIN US</a></li>
+                <li class="footer-link3"><a class="footer-link3" href="">Nike App</a></li>
+                <li class="footer-link3"><a class="footer-link3" href="">Nike Run Club</a></li>
+                <li class="footer-link3"><a class="footer-link3" href="">Nike Training Club</a></li>
+                <li class="footer-link3"><a class="footer-link3" href="">SNKRS</a></li>
+            </ul>
+        </div>
+        <div class="box5">
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li><a href=""><i class="fob fa-facebook"></i></a></li>
+            <li><a href=""><i class="fab fa-youtube"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+        </div>
+        <div class="box6">
+            <h3>United Kingdom</h3>
+            <h5>© 2023 Nike, Inc. All Rights Reserved</h5>
+        </div>
+        <div class="box7">
+            <li class="footer-link4"><a class="footer-link4" href="">Guides</a></li>
+            <li class="footer-link4"><a class="footer-link4" href="">Terms of Use</a></li>
+            <li class="footer-link4"><a class="footer-link4" href="">Terms of Sale</a></li>
+            <li class="footer-link4"><a class="footer-link4" href="">Company Details </a></li>
+            <li class="footer-link4"><a class="footer-link4" href="">UK Modern Slavery Act Disclosure</a></li>
+        </div>
+        <div class="box8">
+            <li class="footer-link5"><a class="footer-link5" href="">Privacy & Cookie Policy</a></li>
+            <li class="footer-link5"><a class="footer-link5" href="">Cookie Settings</a></li>
+        </div>
+    </div>
+</body>
+</html>
